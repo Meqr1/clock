@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react"
+import { useState } from "react"
 
 const Clock = () => {
   const [time, setTime] = useState<string>('10:30')

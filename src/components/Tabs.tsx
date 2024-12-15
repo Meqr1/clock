@@ -30,7 +30,7 @@ const Tab = (props: { onClick: () => void, name: string}) => {
   return (
     <button id={`tab-${props.name}`} className="flex flex-col items-center justify-center" style={{"flexDirection": "column"}} onClick={onClick}>
       {props.name}
-      <span className={`bg-red-600 h-[3px] w-10 block rounded-sm ${!active && "h-0 w-0"} transition-all`}></span>
+      <span className={`bg-red-600 block rounded-sm ${!active && "h-0 w-0"} ${active && "h-[3px] w-10"} transition-all`}></span>
     </button>
   )
 }
